@@ -15,8 +15,8 @@ public class Main {
       //① firstNameとlastNameという名前の変数を定義し、
       //   firstNameには自分の名前、lastNameには自分の名字で初期化しなさい
     	
-    	String firstName = "Rui";
-    	String lastName = "Takakusagi";
+    	String firstName = "rui";
+    	String lastName = "takakusagi";
 
 
         //getName関数の呼び出しと出力
@@ -28,14 +28,13 @@ public class Main {
         //③ arr 配列をループさせ、isOdd関数を使って配列の要素が奇数かどうかの判定を行いなさい。
         //   要素が奇数の場合には「nは奇数です。」と出力されます。
         
-        for (int i = 0; i < arr.length; i++) ;
-    }
-
-	//奇数の判定を行う。
-    public static void isOdd(int num) {
-      if(num % 2 != 0) {
-        System.out.println(num + "は奇数です。");
+        for (int i = 0; i < arr.length; i++) {
         }
+    }
+        public static void isOdd(int num) {
+            if(num % 2 != 0) {
+              System.out.println(num + "は奇数です。");
+              }
 
 
 
@@ -47,24 +46,10 @@ public class Main {
     //   引数には①で定義したfirstNameとlastNameを引数で受け取り、
     //  連結した値を返り値とする変数を定義しなさい。
     
-    public String getName (firstName,lastName); {
-    	return  firstName+ lastName;
-    }
-    
-    
+    public String getName(firstName, lastName) {
+		return firstName+lastName;
+	
 
-
-
-
-    private static char[] getName(String firstName, String lastName) {
-		// TODO 自動生成されたメソッド・スタブ
-		return null;
-	}
-
-	//奇数の判定を行う。
-    public static void isOdd(int num) {
-      if(num % 2 != 0) {
-        System.out.println(num + "は奇数です。");
-        }
+   
   }
 }

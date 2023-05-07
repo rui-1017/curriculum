@@ -22,7 +22,16 @@ class User {
    // アクセス修飾子:「protected」
    // メソッド名:「printAccountInfo」
    
-   protected String printAccountInfo()
-
-
+   public static void main(String[] args) {
+   
+   protected String printAccountInfo() {
+       System.out.println(userName);
+   }
+   protected String printAccountInfo() {
+       System.out.println(id);
+   }
+   protected String printAccountInfo() {
+       System.out.println(password);
+   }
+   }
 }

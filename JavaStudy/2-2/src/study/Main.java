@@ -20,6 +20,9 @@ public class Main {
     	User user = new User();
  
         // ② ①のインスタンス変数より、アカウント情報をコンソール出力するメソッドを呼び出しなさい。
+    	
+    	protected String printAccountInfo() {
+    	       System.out.println(userName);
  
     }
 }
