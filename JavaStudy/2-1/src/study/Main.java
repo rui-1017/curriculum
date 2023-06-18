@@ -29,13 +29,15 @@ public class Main {
         //   要素が奇数の場合には「nは奇数です。」と出力されます。
         
         for (int i = 0; i < arr.length; i++) {
+        	
+			isOdd(arr[i]);
         }
     }
-        public static void isOdd(int num) {
-            if(num % 2 != 0) {
-              System.out.println(num + "は奇数です。");
+        public static void isOdd(int arr) { 
+            if(arr % 2 != 0) {
+              System.out.println(arr + "は奇数です。");
               }
-
+       
 
 
     }

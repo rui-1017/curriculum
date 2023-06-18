@@ -1,4 +1,3 @@
-・User.java
 package study;
 
 /**
@@ -21,11 +20,13 @@ class User {
    // ① 以下のルールに従いアカウント情報（名前、ID、パスワード）を出力するメソッドを作成してください。
    // アクセス修飾子:「protected」
    // メソッド名:「printAccountInfo」
+
+protected void printAccountInfo() {
+	   System.out.println("ユーザー名は、"+userName);
+	   System.out.println("IDは、"+id);
+	   System.out.println("パスワードは、"+password);
    
-   
-   protected void printAccountInfo() {
-       System.out.println(userName,id,password);
-   
-   }
-   }
+
+
+}
 }
