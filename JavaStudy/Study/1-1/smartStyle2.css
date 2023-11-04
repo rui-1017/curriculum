@@ -1,0 +1,17 @@
+/*ウィンドウ幅が最大767pxまでの場合に適用(タブレット用)*/
+@media  screen and (max-width: 767px) {
+    #wrapper {
+    width: 80%;
+    }
+    }
+    
+    
+    /*ウィンドウ幅が最大479pxまでの場合に適用(スマホ用)*/
+    @media  screen and (max-width: 479px) {
+    .header {
+    height: 300px;
+    }
+    .footer {
+    height: 200px;
+    }
+    }
