@@ -10,7 +10,7 @@ body {
 }
 
 .wrapper {
-    width: 400px;
+    width: 1024px;
     margin: 0 auto;
     /* wrapperクラスを中央寄せ */
 }
@@ -22,75 +22,79 @@ body {
 /** header **/
 .header {
     height: 100px;
-    background-color: #FFCE7a
+    background-color: #f6d8a7;
 }
 
 /** end of header **/
 /** contents **/
 .contents {
-    height: 100%;
+    height: 640px;
 }
 
 /** left-center **/
 .left-center {
     float: left;
-    height: 250px;
+    height: 100%;
 }
 
 /** left **/
 .left {
     float: left;
-    width: 150px;
-    height: 250px;
-    background-color: #9DDDF4;
+    width: 300px;
+    height: 100%;
+    background-color: #9edaeb;
+}
+
+.left-upper {
+    width: 200px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.left-lower {
+    width: 200px;
+    height: 415px;
+    margin-top: 25px;
+    margin-left: 50px;
 }
 
 /** end of left **/
-
-.center-lower {
-    width: 150px;
-    height: 150px;
-    margin-left: 150px;
-    background-color: #FFC2C5;
-}
-
-.center-upper {
-    width: 150px;
-    height: 100px;
-    margin-left: 150px;
-    background-color: #FFF083;
-}
-
 .center {
     float: right;
-    width: 150px;
-    height: 50px;
-    background-color: #C2FFCB;
+    width: 424px;
+    height: 100%;
+    background-color: #c4c4e8;
 }
 
 /** end of left-center **/
 /** right **/
 .right {
     float: right;
-    width: 100px;
-    height: 250px;
-    background-color: #F89C9C;
+    width: 300px;
+    height: 100%;
+    background-color: #f9c7c7;
 }
 
-.right-upper {
-    width: 100px;
-    height: 100px;
-    margin-top: 150px;
-    background-color: #FFF083;
+.right-inner {
+    padding-top: 30px;
+    width: 190px;
+    height: 510px;
+    margin: 50px 0 0 50px;
+    /* 上と左への指定なら、こういう書き方も出来ます */
 }
 
+.right-inner-text {
+    padding: 15px 25px;
+    border: 5px solid #eee;
+}
 
 /** end of right **/
 /** end of contents **/
 /** footer **/
 .footer {
     height: 100px;
-    background-color: #BEA5FF;
+    background-color: #abddae;
 }
 
 /** end of footer **/
