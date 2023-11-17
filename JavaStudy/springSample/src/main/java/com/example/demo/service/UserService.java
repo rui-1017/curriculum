@@ -30,3 +30,4 @@ public class UserService {
 		//1行追加
 		return userRepository.findAll();
 	}
+	}
