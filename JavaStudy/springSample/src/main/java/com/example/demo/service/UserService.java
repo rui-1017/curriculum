@@ -21,6 +21,7 @@ public class UserService {
 	//2行追加
 	@Autowired
     private UserRepository userRepository;
+
 	/**
 	 * ユーザー情報 全検索
 	 * @return  検索結果
@@ -29,4 +30,3 @@ public class UserService {
 		//1行追加
 		return userRepository.findAll();
 	}
-}

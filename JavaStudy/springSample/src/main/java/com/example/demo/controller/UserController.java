@@ -1,12 +1,11 @@
 package com.example.demo.controller;
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import com.example.demo.entity.UserEntity;
+import org.springframework.web.bind.annotation.RequestMethod;
+import com.example.demo.entity.User;
 import com.example.demo.service.UserService;
 /**
  * ユーザー情報 Controller
@@ -18,7 +17,8 @@ public class UserController {
    */
   //2行追加
 	@Autowired
-    private UserService userService;
+	UserService userService;
+
   /**
    * ユーザー情報一覧画面を表示
    * @param  model Model
@@ -28,8 +28,8 @@ public class UserController {
 	public String displayList(Model model) {
 
     //3行追加
-	  List<UserEntity> userlist = userService.searchAll();
-      model.addAttribute("userlist", userlist);
-      return "user/list";
+
+
+
   }
 }
