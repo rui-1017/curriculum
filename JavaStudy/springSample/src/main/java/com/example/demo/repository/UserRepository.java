@@ -1,5 +1,7 @@
 package com.example.demo.repository;
 
+import java.util.List;
+
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -11,5 +13,7 @@ import com.example.demo.entity.UserEntity;
 @Repository
 //1行追加
 public interface UserRepository extends JpaRepository<UserEntity, Integer>{
+
+	List<UserEntity> findAll();
 	
 }

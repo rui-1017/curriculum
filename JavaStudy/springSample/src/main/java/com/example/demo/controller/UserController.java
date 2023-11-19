@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import com.example.demo.entity.User;
+import com.example.demo.entity.UserEntity;
 import com.example.demo.service.UserService;
 /**
  * ユーザー情報 Controller
