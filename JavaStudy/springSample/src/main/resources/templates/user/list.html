@@ -5,7 +5,7 @@
   <div class="container">
     <h1>ユーザー情報一覧</h1>
     <div class="float-end">
-      <a th:href="ここに追加" class="btn btn-primary">新規登録はこちら</a>
+      <a th:href="@{/user/add}" class="btn btn-primary">新規登録はこちら</a>
     </div>
     <table class="table table-striped">
       <thead>
@@ -22,11 +22,11 @@
       <tbody>
         <tr th:each="user : ${userlist}" th:object="${user}" class="align-middle">
           <td th:text="*{id}"></td>
-          <td th:text="ここに追加"></td>
-          <td th:text="ここに追加"></td>
+          <td th:text="*{name}"></td>
+          <td th:text="*{address}"></td>
           <td th:text="*{phone}"></td>
           <td th:text="${#dates.format(user.updateDate, 'yyyy/MM/dd')}"></td>
-          <td th:text="ここに追加"></td>
+          <td th:text="${#dates.format(user.createDate, 'yyyy/MM/dd')}"></td>
           <td><a th:href="@{/user/{id}(id=*{id})}" class="btn btn-secondary">詳細</a></td>
         </tr>
       </tbody>
