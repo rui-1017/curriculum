@@ -29,5 +29,5 @@ public class UserService {
 	public List<UserEntity> searchAll() {
 		//1行追加
 		return userRepository.findAll();
-	}
+	 }
 	}
