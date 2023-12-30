@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.example.demo.dto.UserRequest;
+import com.example.demo.dto.UserUpdateRequest;
 import com.example.demo.entity.User;
 import com.example.demo.repository.UserRepository;
 
@@ -50,5 +51,17 @@ public class UserService {
 //	 @return 検索結果
 	public User findById(Integer id) {
 		return userRepository.getOne(id);
+	}
+	
+//	ユーザー情報 更新
+//	 @param user ユーザー情報
+	
+	public void update(UserUpdateRequest userUpdateRequest) {
+		User user = findById(userUpdateRequest.getId());
+		user.setAddress(userUpdateRequest.getAddress());
+		user.setName(userUpdateRequest.getName());
+		user.setPhone(userUpdateRequest.getPhone());
+		user.setUpdateDate(new Date());
+		userRepository.save(user);
 	}
 }
