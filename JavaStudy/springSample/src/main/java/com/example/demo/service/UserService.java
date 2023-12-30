@@ -45,4 +45,10 @@ public class UserService {
     user.setUpdateDate(now);
     userRepository.save(user);
   }
+  
+//  ユーザー情報 主キー検索
+//	 @return 検索結果
+	public User findById(Integer id) {
+		return userRepository.getOne(id);
+	}
 }

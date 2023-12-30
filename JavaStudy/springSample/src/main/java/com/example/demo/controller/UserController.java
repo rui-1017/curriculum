@@ -77,14 +77,16 @@ public class UserController {
     return "redirect:/user/list";
   }
 
-  /**
-   * ユーザー情報詳細画面を表示
-   * @param id 表示するユーザーID
-   * @param model Model
-   * @return ユーザー情報詳細画面
-   */
-  @GetMapping("/user/{id}")
-  public String displayView(@PathVariable Long id, Model model) {
-    return "user/view";
-  }
+  
+//   ユーザー情報詳細画面を表示
+//	  @param id 表示するユーザーID
+//	 @param model Model
+//	 @return ユーザー情報詳細画面
+	@GetMapping("/user/{id}")
+	public String userDetail(@PathVariable Integer id, Model model) {
+		User user = userService.findById(id);
+		model.addAttribute("userData", user);
+		return "user/view";
+	}
+	
 }
