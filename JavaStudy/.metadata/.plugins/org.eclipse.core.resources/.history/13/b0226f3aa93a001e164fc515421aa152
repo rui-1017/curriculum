@@ -1,0 +1,17 @@
+package check;
+
+import constants.Constants;
+
+public class Check{
+
+	private static String firstName = "Takakusagi";
+	private static String lastName = "Rui";
+	public static void main(String[] args) { 
+		printName(firstName,lastName);
+
+	}
+	private static void printName(String firstName, String lastName) {
+	      	String printName = firstName + lastName;
+	        System.out.println(printName);
+	    }
+}
